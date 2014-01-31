@@ -3,6 +3,7 @@
 @{
     ViewBag.Title = "Main";
     Html.RenderAction("Login");
+    
 
     if (Session["User"] != null)
     {
@@ -13,5 +14,6 @@
         @:Välkommen @ViewBag.User.sUserName - @ViewBag.User.sUserRole
     }
 }
+hej
 
 
