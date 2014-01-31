@@ -39,7 +39,7 @@ namespace Group5ScrumProject.Controllers
             ViewBag.User = null;
             return View("Login");
 
-            //Björn
+            //Björn 2
         }
     }
 }
