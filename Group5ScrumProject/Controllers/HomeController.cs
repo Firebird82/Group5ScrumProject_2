@@ -15,7 +15,7 @@ namespace Group5ScrumProject.Controllers
             return View();
         }
         public ActionResult Login(string tbxName, string tbxPassword)
-        {
+        { // Tommy
             if (Session["User"] != null)
                 return View();
             tbUser loggedInUser = (from f in db.tbUsers
