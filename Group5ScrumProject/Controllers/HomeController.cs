@@ -26,7 +26,6 @@ namespace Group5ScrumProject.Controllers
             {
                 Session["User"] = loggedInUser;
                 ViewBag.User = loggedInUser;
-                //hej
                 return View();
             }
             Session.Clear();
@@ -38,7 +37,9 @@ namespace Group5ScrumProject.Controllers
         {
             Session.Clear();
             ViewBag.User = null;
-            return View("index");
+            return View("Login");
+
+            //Björn
         }
     }
 }
