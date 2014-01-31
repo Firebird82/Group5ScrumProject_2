@@ -12,7 +12,7 @@ namespace Group5ScrumProject.Controllers
 
         public ActionResult index()
         {
-            return View();
+            return View(); //David
         }
         public ActionResult Login(string tbxName, string tbxPassword)
         {
