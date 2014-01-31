@@ -1,0 +1,17 @@
+﻿@using Group5ScrumProject
+@using Microsoft.Ajax.Utilities
+@{
+    ViewBag.Title = "Main";
+    Html.RenderAction("Login");
+
+    if (Session["User"] != null)
+    {
+       ViewBag.User = (tbUser)Session["User"];
+    }
+    if (Session["User"] != null)
+    {   // Användare lyckades logga in, vi kommer till scopet nedan..
+        @:Välkommen @ViewBag.User.sUserName - @ViewBag.User.sUserRole
+    }
+}
+
+

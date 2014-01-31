@@ -1,0 +1,15 @@
+﻿@using (Html.BeginForm("index", "Home", FormMethod.Get))
+{  
+    <p>
+        Användarnamn @Html.TextBox("tbxName")
+        Lösenord @Html.TextBox("tbxPassword")
+        @{  // Skriver ut felmeddelande ifall fel användarnamn eller lösenord angivits.
+            if (ViewBag.Message != null)
+            {
+                <br /><b>@ViewBag.Message</b>
+            }
+        }
+        <br />
+        <input type="submit" value="Logga in" />
+    </p>
+}
