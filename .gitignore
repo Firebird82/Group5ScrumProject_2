@@ -2,7 +2,7 @@
 ## Eclipse
 #################
 
-packages
+packages\*
 Web.config
 DataClasses1.dbml
 DataClasses1.dbml.layout
